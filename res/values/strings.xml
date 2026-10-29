@@ -1,0 +1,37 @@
+<resources>
+    <string name="apptitle">Sony Bravia IR Remote</string>
+    <string name="brand">SONY BRAVIA</string>
+    <string name="model">32EX310</string>
+    <string name="subline">Modern Infrared Remote</string>
+    <string name="btn_power">Power</string>
+    <string name="btn_vol_up">Vol +</string>
+    <string name="btn_vol_down">Vol -</string>
+    <string name="btn_ch_up">Ch +</string>
+    <string name="btn_ch_down">Ch -</string>
+    <string name="btn_input">Input</string>
+    <string name="btn_home">Home</string>
+    <string name="btn_back">Back</string>
+    <string name="btn_menu">Menu</string>
+    <string name="btn_netflix">Netflix</string>
+    <string name="btn_youtube">YouTube</string>
+    <string name="btn_display">Display</string>
+    <string name="btn_sound">Sound</string>
+    <string name="btn_mute">Mute</string>
+    <string name="section_controls">TV Controls</string>
+    <string name="section_smart">Smart TV</string>
+    <string name="section_numpad">Number Pad</string>
+    <string name="status_ready">Ready</string>
+    <string name="status_sending">Sending…</string>
+    <string name="status_no_ir">No IR blaster on this device</string>
+    <string name="code_power">Power</string>
+    <string name="code_volume_up">Volume Up</string>
+    <string name="code_volume_down">Volume Down</string>
+    <string name="code_channel_up">Channel Up</string>
+    <string name="code_channel_down">Channel Down</string>
+    <string name="code_mute">Mute</string>
+    <string name="code_input">Input</string>
+    <string name="note_title">Tips</string>
+    <string name="note_1">Point the top edge of your phone at the TV.</string>
+    <string name="note_2">IR codes may vary by region; adjust in Codes.java if needed.</string>
+    <string name="note_3">This app needs a phone with an infrared blaster.</string>
+</resources>

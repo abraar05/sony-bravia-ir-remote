@@ -1,0 +1,15 @@
+<resources>
+    <color name="background">#0B0C10</color>
+    <color name="surface">#1F2833</color>
+    <color name="surface_elevated">#2A3645</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#95A0AA</color>
+    <color name="accent">#66FCF1</color>
+    <color name="accent_dim">#45A29E</color>
+    <color name="power_on">#FF4757</color>
+    <color name="power_off">#2F3542</color>
+    <color name="button_bg">#2A3645</color>
+    <color name="button_pressed">#3D4B5E</color>
+    <color name="border">#3D4B5E</color>
+    <color name="smart">#6C5CE7</color>
+</resources>

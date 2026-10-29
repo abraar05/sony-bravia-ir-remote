@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/brand"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/accent"
+                android:letterSpacing="0.04" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/model"
+                android:textSize="14sp"
+                android:textColor="@color/text_secondary"
+                android:paddingTop="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/subline"
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary"
+                android:paddingTop="4dp" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/status_ready"
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary"
+                android:paddingTop="12dp" />
+        </LinearLayout>
+
+        <!-- Power -->
+        <TextView
+            style="@style/Widget.Remote.SectionTitle"
+            android:text="@string/section_controls" />
+
+        <Button
+            android:id="@+id/btn_power"
+            style="@style/Widget.Remote.Button.Power"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/btn_power"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="12dp">
+
+            <Button
+                android:id="@+id/btn_vol_up"
+                style="@style/Widget.Remote.Button"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:text="@string/btn_vol_up" />
+
+            <Button
+                android:id="@+id/btn_vol_down"
+                style="@style/Widget.Remote.Button"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:text="@string/btn_vol_down" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <Button
+                android:id="@+id/btn_ch_up"
+                style="@style/Widget.Remote.Button"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:text="@string/btn_ch_up" />
+
+            <Button
+                android:id="@+id/btn_ch_down"
+                style="@style/Widget.Remote.Button"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:text="@string/btn_ch_down" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <Button
+                android:id="@+id/btn_input"
+                style="@style/Widget.Remote.Button"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:text="@string/btn_input"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_mute"
+                style="@style/Widget.Remote.Button"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:text="@string/btn_mute"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Navigation -->
+        <TextView
+            style="@style/Widget.Remote.SectionTitle"
+            android:text="@string/section_controls"
+            android:paddingTop="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_back"
+                    style="@style/Widget.Remote.Button"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:text="@string/btn_back"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_home"
+                    style="@style/Widget.Remote.Button"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:text="@string/btn_home"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_menu"
+                    style="@style/Widget.Remote.Button"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:text="@string/btn_menu"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="8dp">
+
+                <Button
+                    android:id="@+id/btn_display"
+                    style="@style/Widget.Remote.Button"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:text="@string/btn_display"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btn_sound"
+                    style="@style/Widget.Remote.Button"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:text="@string/btn_sound"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Smart TV -->
+        <TextView
+            style="@style/Widget.Remote.SectionTitle"
+            android:text="@string/section_smart"
+            android:paddingTop="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_netflix"
+                style="@style/Widget.Remote.Button.Smart"
+                android:layout_width="88dp"
+                android:layout_height="44dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/btn_netflix" />
+
+            <Button
+                android:id="@+id/btn_youtube"
+                style="@style/Widget.Remote.Button.Smart"
+                android:layout_width="88dp"
+                android:layout_height="44dp"
+                android:text="@string/btn_youtube" />
+        </LinearLayout>
+
+        <!-- Number pad -->
+        <TextView
+            style="@style/Widget.Remote.SectionTitle"
+            android:text="@string/section_numpad"
+            android:paddingTop="20dp" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:columnCount="3"
+            android:rowCount="4"
+            android:alignmentMode="alignBounds"
+            android:padding="4dp">
+
+            <Button
+                style="@style/Widget.Remote.Button"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="1"
+                android:textSize="18sp" />
+
+            <Button
+                style="@style/Widget.Remote.Button"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="2"
+                android:textSize="18sp" />
+
+            <Button
+                style="@style/Widget.Remote.Button"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="3"
+                android:textSize="18sp" />
+
+            <Button
+                style="@style/Widget.Remote.Button"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="4"
+                android:textSize="18sp" />
+
+            <Button
+                style="@style/Widget.Remote.Button"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="5"
+                android:textSize="18sp" />
+
+            <Button
+                style="@style/Widget.Remote.Button"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="6"
+                android:textSize="18sp" />
+
+            <Button
+                style="@style/Widget.Remote.Button"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="7"
+                android:textSize="18sp" />
+
+            <Button
+                style="@style/Widget.Remote.Button"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="8"
+                android:textSize="18sp" />
+
+            <Button
+                style="@style/Widget.Remote.Button"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="9"
+                android:textSize="18sp" />
+
+            <Button
+                style="@style/Widget.Remote.Button"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text=""
+                android:enabled="false" />
+
+            <Button
+                style="@style/Widget.Remote.Button"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text="0"
+                android:textSize="18sp" />
+
+            <Button
+                style="@style/Widget.Remote.Button"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:text=""
+                android:enabled="false" />
+        </GridLayout>
+
+        <!-- Tips -->
+        <TextView
+            style="@style/Widget.Remote.SectionTitle"
+            android:text="@string/note_title"
+            android:paddingTop="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/note_1"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/note_2"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/note_3"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"
+            android:paddingBottom="16dp" />
+    </LinearLayout>
+</ScrollView>

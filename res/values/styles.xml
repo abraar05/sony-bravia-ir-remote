@@ -1,0 +1,43 @@
+<resources>
+    <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:colorAccent">@color/accent</item>
+    </style>
+
+    <style name="Widget.Remote.Button" parent="android:Widget">
+        <item name="android:background">@drawable/btn_remote</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="Widget.Remote.Button.Power" parent="Widget.Remote.Button">
+        <item name="android:textColor">@color/power_on</item>
+    </style>
+
+    <style name="Widget.Remote.Button.Smart" parent="Widget.Remote.Button">
+        <item name="android:textColor">@color/smart</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="Widget.Remote.SectionTitle" parent="android:Widget">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <style name="Widget.Remote.Status" parent="android:Widget">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>
