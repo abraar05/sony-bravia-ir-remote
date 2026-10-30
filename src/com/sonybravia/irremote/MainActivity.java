@@ -107,7 +107,9 @@ public class MainActivity extends Activity {
                     @Override public void onClick(View v) {
                         tap();
                         status("Digit " + digit);
-                        if (irHasEmitter()) irSend(IDX_VOL_UP);
+                        // Numpad digits are visual-only in this build (Sony SIRC has
+                        // no standalone digit IR codes). Wire real digit codes here
+                        // if your panel supports them.
                     }
                 });
             }
